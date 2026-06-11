@@ -1,0 +1,55 @@
+# ==========================
+# PYTHON
+# ==========================
+
+class Usuario:
+    def __init__(self, nome, idade):
+        self.nome = nome
+        self.idade = idade
+
+    def exibir(self):
+        print(f"Nome: {self.nome}")
+        print(f"Idade: {self.idade}")
+
+usuario = Usuario("Davi", 20)
+usuario.exibir()
+
+# ==========================
+# PYTHON
+# ==========================
+
+class Usuario:
+    def __init__(self, nome, idade):
+        self.nome = nome
+        self.idade = idade
+
+    def exibir(self):
+        print(f"Nome: {self.nome}")
+        print(f"Idade: {self.idade}")
+
+usuario = Usuario("Davi", 20)
+usuario.exibir()
+
+<?php
+// ==========================
+// PHP
+// ==========================
+
+class Usuario {
+    public $nome;
+    public $idade;
+
+    public function __construct($nome, $idade) {
+        $this->nome = $nome;
+        $this->idade = $idade;
+    }
+
+    public function exibir() {
+        echo "Nome: {$this->nome}<br>";
+        echo "Idade: {$this->idade}";
+    }
+}
+
+$usuario = new Usuario("Davi", 20);
+$usuario->exibir();
+?>

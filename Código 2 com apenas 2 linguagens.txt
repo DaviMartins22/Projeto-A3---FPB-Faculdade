@@ -1,0 +1,27 @@
+import subprocess
+
+# Entrada de dados
+distancia = float(input("Digite a distância percorrida (km): "))
+combustivel = float(input("Digite o combustível gasto (litros): "))
+
+consumo = distancia / combustivel
+
+# Código JavaScript dentro do Python
+codigo_js = f"""
+const consumo = {consumo};
+
+console.log("Consumo médio: " + consumo.toFixed(2) + " km/l");
+
+if (consumo >= 12) {{
+    console.log("Veículo econômico.");
+}} else {{
+    console.log("Veículo com consumo elevado.");
+}}
+"""
+
+# Salva o JS temporariamente
+with open("analise.js", "w", encoding="utf-8") as arquivo:
+    arquivo.write(codigo_js)
+
+# Executa o JavaScript pelo Node.js
+subprocess.run(["node", "analise.js"])

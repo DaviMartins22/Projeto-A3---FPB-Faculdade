@@ -1,0 +1,41 @@
+<?php
+// ===== PHP =====
+$nome = "Davi";
+$idade = 21;
+
+echo "<h2>Dados vindos do PHP</h2>";
+echo "Nome: $nome <br>";
+echo "Idade: $idade <br>";
+?>
+
+<script>
+// ===== JavaScript =====
+function mostrarMensagem() {
+    let mensagem = "Olá! Esta mensagem veio do JavaScript.";
+    document.getElementById("resultado").innerHTML = mensagem;
+}
+</script>
+
+<pre>
+// ===== C# =====
+using System;
+
+class Programa
+{
+    static void Main()
+    {
+        string nome = "Davi";
+        int idade = 21;
+
+        Console.WriteLine("Dados vindos do C#");
+        Console.WriteLine($"Nome: {nome}");
+        Console.WriteLine($"Idade: {idade}");
+    }
+}
+</pre>
+
+<button onclick="mostrarMensagem()">
+    Executar JavaScript
+</button>
+
+<div id="resultado"></div>
